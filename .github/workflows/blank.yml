@@ -22,6 +22,11 @@ jobs:
       - name: Get apk package names
         run: | 
             curl https://fa5a3d68c9ee40a0911454fabb76db3d@api-dev.headspin.io/v0/apps/apk/packages
+            
+      - name: Upload APK directly to device
+        run: | 
+            curl -X POST https://fa5a3d68c9ee40a0911454fabb76db3d@api-dev.headspin.io/v0/adb/9632190603001ND/install --data-binary '@compass.apk'
+
            
       - uses: actions/checkout@v2
      
