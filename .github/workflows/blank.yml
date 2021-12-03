@@ -10,9 +10,9 @@ jobs:
 #         run: | 
 #           curl --location --request POST 'https://27516e17e00845e888663172623e9ea5@api-dev.headspin.io/v0/apps/apk/upload' \ --header 'Content-Type: application/vnd.android.package-archive' \--data-binary '@okc.apk'
       
-#       - name: Get apk package names
-#         run: | 
-#           curl https://fa5a3d68c9ee40a0911454fabb76db3d@api-dev.headspin.io/v0/apps/apk/packages
+       - name: Get apk package names
+         run: | 
+           curl https://fa5a3d68c9ee40a0911454fabb76db3d@api-dev.headspin.io/v0/apps/apk/packages
            
       - uses: actions/checkout@v2
      
